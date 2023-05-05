@@ -2,6 +2,7 @@ import random
 import math
 import more_itertools
 
+
 def miller_rabin(n, k=10):
     if n == 2 or n == 3:
         return True
@@ -26,6 +27,7 @@ def miller_rabin(n, k=10):
             return False
     return True
 
+
 def find_primes(limit):
     primes = [2]
     for n in range(3, limit + 1, 2):
@@ -33,11 +35,12 @@ def find_primes(limit):
             primes.append(n)
     return primes
 
+
 num = int(input("输入一个整数，求出其内的所有质数:"))
 primes = find_primes(num)
-if len(primes) >= 400 :
+if len(primes) >= 400:
     for page in more_itertools.chunked(primes, 20):
         print(page)
         input("按任意键继续...")
-else :
+else:
     print(primes)
