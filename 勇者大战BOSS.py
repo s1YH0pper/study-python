@@ -1,7 +1,7 @@
 # 代码实例
 # 开发者：霍珀
 # 版权所有：Team GS
-
+import random
 # 输入玩家姓名
 user_name = input('请输入玩家名：')
 boss_name = input('请输入BOSS名：')
@@ -29,7 +29,7 @@ else:
 print('=' * 5, '游戏开始', '=' * 5, sep='')
 
 # 数值初始化
-import random
+
 
 train = 4
 attack = 2
